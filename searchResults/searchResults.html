@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6fb82d8d50.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" defer src="js/searchResultsJs.js"></script>
+    <link href="./searchResultsCss.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div class="body-wrapper-wrapper"> -->
+    <div class="body-wrapper">
+      <div class="profile-header">
+        <div class="profile-btn"><div class="home-btn">Home</div></div>
+      </div>
+      <div class="inner-form">
+        <div class="basic-search">
+          <div class="input-field">
+            <input id="search" type="text" placeholder="Type Keywords" />
+            <div class="icon-wrap">
+              <svg class="search">
+                version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="20"
+                height="20" viewBox="0 0 20 20" >
+                <path
+                  d="M18.869 19.162l-5.943-6.484c1.339-1.401 2.075-3.233 2.075-5.178 0-2.003-0.78-3.887-2.197-5.303s-3.3-2.197-5.303-2.197-3.887 0.78-5.303 2.197-2.197 3.3-2.197 5.303 0.78 3.887 2.197 5.303 3.3 2.197 5.303 2.197c1.726 0 3.362-0.579 4.688-1.645l5.943 6.483c0.099 0.108 0.233 0.162 0.369 0.162 0.121 0 0.242-0.043 0.338-0.131 0.204-0.187 0.217-0.503 0.031-0.706zM1 7.5c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5-2.916 6.5-6.5 6.5-6.5-2.916-6.5-6.5z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="advance-search">
+          <span class="desc">Advanced Search</span>
+          <div class="row">
+            <!-- <div class="dropdown dropdown--1">
+              <div class="select-box">
+                <div class="option-container">
+                  <div class="option">
+                    <div class="option">
+                      <input
+                        type="radio"
+                        class="radio"
+                        id="null"
+                        name="category"
+                      />
+                      <label for="null">SELECT AGE</label>
+                    </div>
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="action"
+                      name="category"
+                    />
+                    <label for="action">Action</label>
+                  </div>
+
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="psychological"
+                      name="category"
+                    />
+                    <label for="psychological">Psychological</label>
+                  </div>
+
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="thriller"
+                      name="category"
+                    />
+                    <label for="thriller">Thriller</label>
+                  </div>
+
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="romance"
+                      name="category"
+                    />
+                    <label for="romance">Romance</label>
+                  </div>
+
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="mystery"
+                      name="category"
+                    />
+                    <label for="mystery">Mystery</label>
+                  </div>
+
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="comedy"
+                      name="category"
+                    />
+                    <label for="comedy">Comedy</label>
+                  </div>
+                </div>
+                <div class="selected">SELECT GENRE</div>
+              </div>
+            </div> -->
+
+            <div class="dropdown dropdown--2">
+              <div class="select-box">
+                <div class="option-container">
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="null"
+                      name="category"
+                    />
+                    <label for="null">SELECT REGION</label>
+                  </div>
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="USA"
+                      name="category"
+                    />
+                    <label for="USA">USA</label>
+                  </div>
+
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="13+"
+                      name="category"
+                    />
+                    <label for="Europe">Europe</label>
+                  </div>
+                </div>
+                <div class="selected">SELECT REGION</div>
+              </div>
+            </div>
+
+            <div class="dropdown dropdown--3">
+              <div class="select-box">
+                <div class="option-container">
+                  <!-- <div class="option">
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="null"
+                      name="category"
+                    />
+                    <label for="null">SELECT YEAR</label>
+                  </div> -->
+
+                  <!-- <div class="option">
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="2022"
+                      name="category"
+                    />
+                    <label for="2022">2022</label>
+                  </div> -->
+                </div>
+                <div class="selected">SELECT YEAR</div>
+              </div>
+            </div>
+
+            <!-- I can't make more advanced fields because the API just doesn't give me the ability to do anything -->
+            <!-- <div class="dropdown dropdown--4">
+              <div class="select-box">
+                <div class="option-container">
+                  <div class="option">
+                    <input
+                      type="radio"
+                      class="radio"
+                      id="null"
+                      name="category"
+                    />
+                    <label for="null">SELECT RATING</label>
+                  </div>
+                  <div class="option">
+                    <input type="radio" class="radio" id="10" name="category" />
+                    <label for="10">10</label>
+                  </div>
+
+                  <div class="option">
+                    <input type="radio" class="radio" id="9+" name="category" />
+                    <label for="9+">9+</label>
+                  </div>
+
+                  <div class="option">
+                    <input type="radio" class="radio" id="8+" name="category" />
+                    <label for="8+">8+</label>
+                  </div>
+
+                  <div class="option">
+                    <input type="radio" class="radio" id="7+" name="category" />
+                    <label for="7+">7+</label>
+                  </div>
+
+                  <div class="option">
+                    <input type="radio" class="radio" id="6+" name="category" />
+                    <label for="6+">6+</label>
+                  </div>
+                  <div class="option">
+                    <input type="radio" class="radio" id="5+" name="category" />
+                    <label for="5+">5+</label>
+                  </div>
+                  <div class="option">
+                    <input type="radio" class="radio" id="4+" name="category" />
+                    <label for="4+">4+</label>
+                  </div>
+                  <div class="option">
+                    <input type="radio" class="radio" id="3+" name="category" />
+                    <label for="3+">3+</label>
+                  </div>
+                  <div class="option">
+                    <input type="radio" class="radio" id="2+" name="category" />
+                    <label for="2+">2+</label>
+                  </div>
+                  <div class="option">
+                    <input type="radio" class="radio" id="1+" name="category" />
+                    <label for="1+">1+</label>
+                  </div>
+                </div>
+                <div class="selected">SELECT RATING</div>
+              </div>
+            </div> -->
+
+            <!-- <div class="input-field">
+                  <div class="input-select">
+                    <select data-trigger="" name="choices-single-defaul">
+                      <option placeholder="" value="="radio</option>
+                      <option>ACTION</option>
+                      <option>PSYCHOLOGICAL</option>
+                      <option>THRILLER</option>
+                      <option>ROMANCE</option>
+                      <option>MYSTERY</option>
+                      <option>COMEDY</option>
+                    </select>
+                  </div>
+                </div> -->
+          </div>
+          <div class="advance-search-btns">
+            <div class="input-field">
+              <div class="result-count"></div>
+              <div class="group-btn">
+                <button class="btn-delete" id="delete">Reset</button>
+                <button class="btn-search search">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="separator-line"><div class="line"></div></div>
+        <div class="search-results-container">
+          <div class="search-results-names">
+            <div class="results-name">Name</div>
+            <div class="results-extrathings">
+              <div class="results-rating">Average score</div>
+              <div class="results-agerating">Age rating</div>
+              <div class="results-maingenre">Genres</div>
+            </div>
+          </div>
+          <div class="search-results">
+            <!-- <div class="error-wrapper">
+              <div class="error">Search failed. &#9785;</div>
+            </div> -->
+            <!-- <div class="search-result">
+              <img
+                class="result-image"
+                src="https://www.sonypictures.com/sites/default/files/styles/max_560x840/public/title-key-art/morbius_onesheet_1400x2100_he.jpg?itok=-jQVkWIe"
+              />
+              <div class="result-details">
+                <div class="result-name">
+                  <div class="result-name-title">Morbius(2022)</div>
+                  <div class="result-name-authors">2000-09-13</div>
+                </div>
+                <div class="result-extra-details">
+                  <div class="result-rating">Avg. 7.4/10</div>
+                  <div class="result-agerating">18+</div>
+                  <div class="result-maingenre">Action, Adventure, Mystery</div>
+                </div>
+              </div>
+            </div> -->
+            <!-- <div class="loader-wrap"><div class="loader"></div></div> -->
+          </div>
+        </div>
+        <div class="pages">
+          <!-- <div class="page-btn prev-page" data-page="1">Prev</div>
+          <div class="page-btn next-page" data-page="2">Next </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+  </body>
+</html>
