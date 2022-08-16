@@ -12,5 +12,3 @@ advOptsYearView.renderYears(73);
 redirectView.redirectHandler(redirectClick);
 
 console.log("Welcome to the application");
-
-console.log("Brand new feature");
