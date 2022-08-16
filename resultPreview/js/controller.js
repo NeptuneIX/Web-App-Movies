@@ -23,10 +23,3 @@ async function checkMovie() {
 
 previewView.redirectHandler(checkMovie);
 previewView.homeBtnHandler();
-
-// document.querySelectorAll("a").forEach((el) => {
-//   console.log(el.innerHTML.split(" ").join("+"));
-//   el.href = `http://www.google.com/search?q=${el.innerHTML
-//     .split(" ")
-//     .join("+")}`;
-// });
