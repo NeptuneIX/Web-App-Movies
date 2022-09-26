@@ -8,9 +8,11 @@ export default class OptionsView {
     const _optionsContainer = document.querySelectorAll(".option-container");
     const _optionsList = document.querySelectorAll(".option");
     // When its clicked, add the active class to the options container(they get displayed)
+    // When its clicked, add the active class to the options container(they get displayed)
     _selected.forEach((select, i) => {
       select.addEventListener("click", () => {
         _optionsContainer[i].classList.toggle("active");
+        _selected[i].classList.toggle("active");
       });
     });
 
@@ -21,6 +23,7 @@ export default class OptionsView {
         const parentContainerSelected = e.target.parentNode.nextElementSibling;
         parentContainerSelected.innerHTML = o.querySelector("label").innerHTML;
         parentContainer.classList.remove("active");
+        parentContainer.nextElementSibling.classList.remove("active");
       });
     });
   }

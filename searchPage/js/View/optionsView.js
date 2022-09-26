@@ -12,6 +12,7 @@ export default class OptionsView {
     _selected.forEach((select, i) => {
       select.addEventListener("click", () => {
         _optionsContainer[i].classList.toggle("active");
+        _selected[i].classList.toggle("active");
       });
     });
 
@@ -22,6 +23,7 @@ export default class OptionsView {
         const parentContainerSelected = e.target.parentNode.nextElementSibling;
         parentContainerSelected.innerHTML = o.querySelector("label").innerHTML;
         parentContainer.classList.remove("active");
+        parentContainer.nextElementSibling.classList.remove("active");
       });
     });
   }
