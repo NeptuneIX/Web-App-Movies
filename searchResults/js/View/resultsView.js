@@ -97,7 +97,7 @@ class ResultsView extends View {
             <div class="result-name-authors">${data.release_date}</div>
           </div>
           <div class="result-extra-details">
-            <div class="result-rating">Avg.<br> ${data.vote_average}</div>
+            <div class="result-rating">Avg.<br> ${data.vote_average == 0 ? 'null' : data.vote_average }</div>
             <div class="result-agerating">${data.adult ? `18+` : "<18"}</div>
             <div class="result-maingenre">${
               data.genre_ids.length !== 0

@@ -82,5 +82,5 @@ export async function nextPage(data, queryData, isNextPage) {
 export async function previewMovie(redirectToPreviewId) {
   localStorage.setItem("movieId", JSON.stringify(redirectToPreviewId));
 
-  window.location.href = "../resultsPreview/resultPreview.html";
+  window.location.href = "../resultPreview/resultPreview.html";
 }
