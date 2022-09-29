@@ -10,7 +10,7 @@ export default class View {
 
   homeBtnHandler() {
     document.querySelector(".home-btn").addEventListener("click", function () {
-      window.location.href = "../searchPage/searchPage.html";
+      window.location.href = "../index.html";
     });
   }
 
