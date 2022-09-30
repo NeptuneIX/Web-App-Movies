@@ -525,6 +525,59 @@ select {
   background: rgb(40, 35, 35) !important;
 }
 
+@media only screen and (max-width: 1000px) {
+  .result-name {
+    width: 10rem;
+    /* height: 10rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 3rem; */
+    margin: 0px;
+    margin-left: 1rem;
+    border-bottom: 3px solid #e45c27;
+
+}
+
+.result-name-authors {
+  font-size: 0.8rem !important;
+}
+
+.search-result * {
+  font-size: 1.35rem;
+}
+
+.search-result {
+  width: 70rem;
+}
+
+.result-extra-details {
+  gap: 1.5rem;
+  width: 20rem;
+  margin-left: 0px;
+}
+
+.search-results-names * {
+  transform: translateX(0px);
+}
+
+.search-results-names {
+  gap: 3rem
+}
+
+.results-maingenre {
+  margin-left: 0.8rem;
+}
+
+
+.results-extrathings {
+  gap: 1rem;
+}
+
+}
+
+
+
 
 @media only screen and (max-width: 550px) {
 
