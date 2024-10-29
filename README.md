@@ -20,7 +20,7 @@ A full-stack movie search application built with JavaScript and designed to prov
 To run this app locally:
 
 1. Clone the repository:
-   `git clone https://github.com/yourusername/movie-search-app.git`
+   `git clone https://github.com/NeptuneIX/Web-App-Movies.git`
 2. Install dependencies:
    `npm install`
 3. Start the server:
