@@ -16,7 +16,7 @@ class yearView extends View {
   </div>`;
     let i = 0;
     while (i != totalyears) {
-      const l = 2022;
+      const l = new Date().getFullYear();
       html = html.concat(`
                 <div class="option">
                         <input
